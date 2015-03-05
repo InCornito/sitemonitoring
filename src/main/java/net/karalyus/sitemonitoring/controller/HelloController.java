@@ -13,7 +13,7 @@ import net.karalyus.sitemonitoring.service.HelloSpringService;
 public class HelloController {
 	
 	@ManagedProperty("#{helloSpringService}")
-	public HelloSpringService helloSpringService;
+	private HelloSpringService helloSpringService;
 	
 	public String showHello(){
 		return helloSpringService.sayHello();
