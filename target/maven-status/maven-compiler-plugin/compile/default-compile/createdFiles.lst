@@ -1,0 +1,4 @@
+net\karalyus\sitemonitoring\MyWebAppInitializer.class
+net\karalyus\sitemonitoring\service\HelloSpringService.class
+net\karalyus\sitemonitoring\controller\HelloController.class
+net\karalyus\sitemonitoring\SpringConfiguration.class
