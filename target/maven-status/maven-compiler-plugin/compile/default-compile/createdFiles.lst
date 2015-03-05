@@ -1,7 +1,8 @@
 net\karalyus\sitemonitoring\MyWebAppInitializer.class
 net\karalyus\sitemonitoring\service\HelloSpringService.class
 net\karalyus\sitemonitoring\repository\CheckRepository.class
+net\karalyus\sitemonitoring\service\CheckService.class
+net\karalyus\sitemonitoring\controller\CheckListController.class
 net\karalyus\sitemonitoring\service\InitDbService.class
-net\karalyus\sitemonitoring\controller\HelloController.class
 net\karalyus\sitemonitoring\entity\Check.class
 net\karalyus\sitemonitoring\SpringConfiguration.class

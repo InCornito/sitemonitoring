@@ -1,10 +1,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
-  <h:head>
-  </h:head>
-  <h:body>
-    managed bean says:
-    #{helloController.showHello()}
-  </h:body>
+<h:head>
+</h:head>
+<h:body>
+
+<p:dataTable value="#{checkListController.checks}" var="check">
+	<p:column headerText="name">
+		#{check.name}
+	</p:column>
+	<p:column headerText="url">
+		<a href="#{check.url}" target="_blank">
+			#{check.url}
+		</a>
+	</p:column>
+</p:dataTable>
+
+
+<h:form>
+	<h:panelGrid columns="2">
+		name:
+		<p:inputText value="#{checkListController.check.name}"/>
+		
+		url:
+		<p:inputText value="#{checkListController.check.url}"/>
+		
+	</h:panelGrid>
+	<p:commandButton value="save" action="#{checkListController.save()}"/>
+</h:form>
+</h:body>
 </html>
